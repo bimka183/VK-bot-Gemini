@@ -1,0 +1,4 @@
+vkbottle
+google-genai
+python-dotenv
+httpx[socks]

@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    env_file: .env
+    environment:
+      # .env специально для Докера
+      - PROXY_URL=http://host.docker.internal:10809
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # Для Linux-серверов
+    restart: always
